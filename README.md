@@ -19,15 +19,20 @@ into fixed-size numeric vectors.
 Protein and ligand representations are combined and used to predict docking or activity
 scores.
 
+
 ## Repository Structure
+
+```text
 protein-ligand-gnn/
-├── data/ # Protein PDB files and ligand data
-├── protein/ # Protein parsing and feature extraction
-├── ligand/ # Ligand fingerprint computation
-├── graphs/ # Graph construction utilities
-├── models/ # GNN and prediction models
-├── notebooks/ # Experiments and visualizations
-├── utils/ # Helper functions
+├── data/           # Protein PDB files and ligand data
+│   ├── proteins/
+│   └── ligands/
+├── protein/        # Protein parsing and feature extraction
+├── ligand/         # Ligand fingerprint computation
+├── graphs/         # Graph construction utilities
+├── models/         # GNN and prediction models
+├── notebooks/      # Experiments and visualizations
+├── utils/          # Helper functions
 ├── requirements.txt
 ├── .gitignore
 └── README.md
